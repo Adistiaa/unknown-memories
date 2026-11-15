@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://crvbige0wsxpq"]
+
+[ext_resource type="Script" uid="uid://cmew0fmv1ljk" path="res://stages/main_menu.gd" id="1_dpnlc"]
+[ext_resource type="PackedScene" uid="uid://c620bdibwwb0d" path="res://stages/Stage1_Forest.tscn" id="2_tplkq"]
+[ext_resource type="PackedScene" uid="uid://psmypx7xiwdw" path="res://stages/EnemyLeak.tscn" id="3_larud"]
+
+[node name="MainMenu" type="Node2D" unique_id=303266503]
+script = ExtResource("1_dpnlc")
+
+[node name="Stage1_Forest" parent="." unique_id=674697099 instance=ExtResource("2_tplkq")]
+
+[node name="EnemyDukun" parent="." unique_id=76321942 instance=ExtResource("3_larud")]
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1040619586]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
